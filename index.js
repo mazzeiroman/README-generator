@@ -13,13 +13,24 @@ const questions = [
     },
     {
         type: "input",
+        name: "yName",
+        message: "What is your name?"
+    },
+    {
+        type: "input",
         name: "description",
         message: "Description, Installation, Usage, Contributing, and Tests: "
     },
-    {   type: 'list',
-        name: 'license',
-        message: 'A list License:',
-        choices: ['Item 1', 'Item 2', 'Item 3'],
+    {   type: "list",
+        name: "license",
+        message: "A list License:",
+        choices: ["None", "Academic Free License v3.0", "Apache license 2.0",
+                  "Artistic license 2.0", "Boost Software License 1.0", "BSD 2-clause Simplified license",
+                  "BSD 3-clause New or Revised license", "BSD 3-clause Clear license", "Creative Commons license family",
+                  "Creative Commons Zero v1.0 Universal", "Creative Commons Attribution 4.0", "GNU Affero General Public License v3.0",
+                  "MIT", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0",
+                  "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"
+                  ],
         default: 2
     },
     {
@@ -31,7 +42,12 @@ const questions = [
         type: "input",
         name: "email",
         message: "Email: "
-    }
+    },
+    {
+        type: "input",
+        name: "year",
+        message: "Year"
+    },
 ];
 
 function getData() {
