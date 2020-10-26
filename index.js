@@ -21,6 +21,13 @@ const questions = [
         name: "description",
         message: "Description, Installation, Usage, Contributing, and Tests: "
     },
+    // {   type: 'expand',
+    //     name: 'licenses',
+    //     message: 'A list of licenses',
+    //     choices: [{key: 'None', name: 'None'},
+    //               {key: "Apache-license-2", name: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"}
+    //              ]
+    // },
     {   type: "list",
         name: "license",
         message: "A list License:",
@@ -32,6 +39,7 @@ const questions = [
                   "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"
                   ],
         default: 2
+        // maybe an array of objects to add the badges to the file
     },
     {
         type: "input",
