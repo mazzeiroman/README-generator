@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-
+const generateREADME = require("./utils/generateMarkdown");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
@@ -38,7 +38,39 @@ function getData() {
     return inquirer.prompt(questions)
 };
 
-getData();
+// function generateHTML(answers) {
+//     return `# ${answers.name}
+ 
+
+// ## Description, Installation, Usage, Contributing, and Tests: 
+//     ${answers.description}
+
+// ## License
+//      ${answers.license}
+
+// ## Questions?
+    
+// > ${answers.github}
+// > ${answers.email}
+    
+    
+//     `;
+//   }
+  getData()
+  .then(function(answers) {
+    const README = generateREADME(answers);
+
+    return writeFileAsync("README.md", README);
+  })
+  .then(function() {
+    console.log("Successfully wrote to README.md file");
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
+
+
+
 // function to write README file
 // function writeToFile(fileName, data) {
 
