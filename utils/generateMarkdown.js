@@ -4,24 +4,46 @@ function generateMarkdown(data) {
 
 ![License](https://img.shields.io/badge/License-${data.license}-blue.svg "License Badge")
 ## Table of Content: 
-### (Link to Github Repo) [https://github.com/${data.github}/${data.name}#link-to-github-repo]
-###  (Description, Installation, Usage, Contributing, and Tests) [https://github.com/${data.github}/${data.name}#description-installation-usage-contributing-and-tests]
-### (License) [https://github.com/${data.github}/${data.name}#license]
-### (Contact) [https://github.com/${data.github}/${data.name}#contact]
-### (Credits)[https://github.com/${data.github}/${data.name}#credits]
+#### (Link to Github Repo) [https://github.com/${data.github}/${data.name}#link-to-github-repo]
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#Contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Contact](#contact)
+- [Credits](#credits)
+
 
 ## Link to Github Repo
 https://github.com/${data.github}/${data.name}
 
-## Description, Installation, Usage, Contributing, and Tests
-${data.description}
-  
+## Link to the Deployed Application
+ ${data.deployed}
+
+## Description
+ ${data.description}
+ 
+## Installation 
+ ${data.instalation}
+
+## Usage
+ ${data.usage}
+
+## Contributing
+ ${data.contributing}
+
+## Tests
+ ${data.tests}
+
 ## License
        ${data.license}
   
-## Contact
+## Questions
+For any questions you can find me on Github or through my E-mail:
       
-> Github: ${data.github}
+> [GitHub ${data.github}](https://github.com/${data.github})
+
 > E-mail: ${data.email}
       
 ### Credits

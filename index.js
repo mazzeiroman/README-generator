@@ -19,15 +19,28 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "Description, Installation, Usage, Contributing, and Tests: "
+        message: "Description: "
     },
-    // {   type: 'expand',
-    //     name: 'licenses',
-    //     message: 'A list of licenses',
-    //     choices: [{key: 'None', name: 'None'},
-    //               {key: "Apache-license-2", name: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"}
-    //              ]
-    // },
+    {
+        type: "input",
+        name: "instalation",
+        message: "Installation: "
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Usage: "
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Contributing: "
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Tests: "
+    },
     {   type: "list",
         name: "license",
         message: "A list License:",
@@ -39,7 +52,6 @@ const questions = [
                   "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"
                   ],
         default: 2
-        // maybe an array of objects to add the badges to the file
     },
     {
         type: "input",
@@ -53,6 +65,11 @@ const questions = [
     },
     {
         type: "input",
+        name: "deployed",
+        message: "Link to the deployed Application: "
+    },
+    {
+        type: "input",
         name: "year",
         message: "Year"
     },
@@ -62,48 +79,33 @@ function getData() {
     return inquirer.prompt(questions)
 };
 
-// function generateHTML(answers) {
-//     return `# ${answers.name}
- 
+// WITHOUT USING ASYNC AND AWAIT
+//   getData()
+//   .then(function(answers) {
+//     const README = generateREADME(answers);
 
-// ## Description, Installation, Usage, Contributing, and Tests: 
-//     ${answers.description}
+//     return writeFileAsync("README.md", README);
+//   })
+//   .then(function() {
+//     console.log("Successfully wrote to README.md file");
+//   })
+//   .catch(function(err) {
+//     console.log(err);
+//   });
 
-// ## License
-//      ${answers.license}
 
-// ## Questions?
-    
-// > ${answers.github}
-// > ${answers.email}
-    
-    
-//     `;
-//   }
-  getData()
-  .then(function(answers) {
+// function to initialize program
+ async function init() {
+try {
+    const answers = await getData();
     const README = generateREADME(answers);
 
-    return writeFileAsync("README.md", README);
-  })
-  .then(function() {
+    await writeFileAsync("README.md", README);
     console.log("Successfully wrote to README.md file");
-  })
-  .catch(function(err) {
+} catch (err) {
     console.log(err);
-  });
+}
+}
 
-
-
-// function to write README file
-// function writeToFile(fileName, data) {
-
-// }
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
+// function call to initialize program
+init();
