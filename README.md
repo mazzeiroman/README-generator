@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
 ## Table of Content: 
-#### (Link to Github Repo) [https://github.com/mazzeiroman/README-GENERATOR#link-to-github-repo]
+#### (Link to Github Repo) [https://github.com/mazzeiroman/README-GENERATOR]
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
