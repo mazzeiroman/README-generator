@@ -11,7 +11,7 @@ function generateMarkdown(data) {
 - [Contributing](#Contributing)
 - [Tests](#tests)
 - [License](#license)
-- [Contact](#contact)
+- [Questions](#questions)
 - [Credits](#credits)
 
 
@@ -42,7 +42,7 @@ https://github.com/${data.github}/${data.name}
 ## Questions
 For any questions you can find me on Github or through my E-mail:
       
-> [GitHub ${data.github}](https://github.com/${data.github})
+> GitHub: https://github.com/${data.github}
 
 > E-mail: ${data.email}
       

@@ -9,7 +9,7 @@
 - [Contributing](#Contributing)
 - [Tests](#tests)
 - [License](#license)
-- [Contact](#contact)
+- [Questions](#Questions)
 - [Credits](#credits)
 
 
@@ -17,7 +17,7 @@
 https://github.com/mazzeiroman/README-GENERATOR
 
 ## Link to the Deployed Application
- www.deployed.com
+ https://drive.google.com/file/d/1mJu0J4XZoFvBORfSU61gKcUDyT5Ph9JT/view?usp=sharing
 
 ## Description
  This application was created using node.JS and allows the user to generate a professional readme file after answering a few questions/prompts using the console.
@@ -40,7 +40,7 @@ https://github.com/mazzeiroman/README-GENERATOR
 ## Questions
 For any questions you can find me on Github or through my E-mail:
       
-> [GitHub mazzeiroman](https://github.com/mazzeiroman)
+> GitHub https://github.com/mazzeiroman
 
 > E-mail: mazzeiroman@gmail.com
       
